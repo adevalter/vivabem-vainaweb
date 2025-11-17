@@ -125,7 +125,7 @@ header nav a {
     margin-left: 20px;
   }
 }
-.box-banner .box-titulo h2 {
+.box-banner .box-titulo .h2-titulo {
   font-size: 2.2rem;
   font-weight: bold;
   background: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
@@ -135,13 +135,13 @@ header nav a {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .box-banner .box-titulo h2 {
+  .box-banner .box-titulo .h2-titulo {
     text-align: left;
     width: 70%;
   }
 }
 @media (min-width: 1024px) {
-  .box-banner .box-titulo h2 {
+  .box-banner .box-titulo .h2-titulo {
     font-size: 45px;
   }
 }
@@ -227,4 +227,83 @@ header nav a {
   .box-banner .box-titulo .btn-banner .btn-white {
     height: 44px;
   }
+}
+
+.exames-rotina {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+.exames-rotina .h2-subtitulo {
+  width: 21.25rem;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 25px;
+  text-align: center;
+  background: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.exames-rotina p {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #04031c;
+}
+
+.cards-exames {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-exames img {
+  padding-top: 1rem;
+}
+.cards-exames p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #04031c;
+}
+.cards-exames .card-exame {
+  width: 282px;
+  height: 202px;
+  left: 68px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  margin-top: 2rem;
+}
+.cards-exames .card-exame h2 {
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #04031c;
+}
+.cards-exames .card-exame p {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #04031c;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
