@@ -12,5 +12,198 @@
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
-  
+}
+
+header {
+  width: 90%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    background-image: url("./image/bannerHeader.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url("./image/bannerHeader.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 85%;
+    height: 55vh;
+  }
+
+  .box-header {
+    width: 98%;
+    height: 5%;
+    margin-top: 22px;
+
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #4247a2 0%, #52b095 100%);
+    margin-left: 1.1rem;
+    height: 21px;
+    @media (min-width: 768px) {
+      padding-left: 1.7rem;
+      height: 3.563rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 73.188rem;
+      margin-left: 2.5rem;
+    }
+  }
+
+  img {
+    width: 87px;
+    height: 21px;
+    @media (min-width: 768px) {
+      width: 11.938rem;
+      height: 2.813rem;
+    }
+  }
+  nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      width: 30rem;
+      margin-right: 18.75rem;
+    }
+
+    a {
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      @media (min-width: 768px) {
+        font-size: 20px;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.box-banner {
+  margin-left: 20px;
+  width: 98%;
+  height: 38vh;
+
+  @media (min-width: 1024px) {
+    width: 80%;
+    margin-left: 2.5rem;
+  }
+
+  .box-titulo {
+    padding-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+    }
+
+    @media (min-width: 1024px) {
+      width: 60%;
+      margin-left: 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #1173d4 0%, #33cc73 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+      @media (min-width: 768px) {
+        text-align: left;
+        width: 70%;
+      }
+      @media (min-width: 1024px) {
+        font-size: 45px;
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 400;
+      @media (min-width: 768px) {
+        padding-top: 1rem;
+        text-align: left;
+        width: 50%;
+        font-size: 1.5rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 25px;
+        width: 40%;
+      }
+    }
+    .btn-banner {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      @media (min-width: 768px) {
+        width: 50%;
+
+        padding: 0.5rem;
+        align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        width: 80%;
+        padding: 0.5rem;
+        align-items: center;
+      }
+
+      .btn-blue {
+        width: 162px;
+        height: 53px;
+
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+        background-color: #1173d4;
+
+        @media (min-width: 768px) {
+          width: 12.125rem;
+          margin-left: 0;
+        }
+        @media (min-width: 768px) {
+          height: 44px;
+          margin-left: 51px;
+        }
+      }
+      .btn-white {
+        width: 107px;
+        height: 53px;
+        border-width: 1px;
+        border-radius: 10px;
+        background: #f9fafb;
+        border: 1px solid #1173d4;
+        color: #1173d4;
+        font-size: 14px;
+        font-weight: 500;
+        @media (min-width: 768px) {
+          width: 8.125rem;
+        }
+        @media (min-width: 768px) {
+          height: 44px;
+        }
+      }
+    }
+  }
 }
